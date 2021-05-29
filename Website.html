@@ -1,0 +1,30 @@
+<body>
+  <script type="text/javascript" href="website.js"></script>
+<script>
+    function addToArray() {
+    var box1 = document.getElementById("box1").value;
+    var box2 = document.getElementById("box2").value;
+    var box3 = document.getElementById("box3").value;
+    var arrayNumbers = new Array(box1, box2, box3);
+   console.log(arrayNumbers);
+   var values = arrayNumbers.sort(function(a, b){return a-b});
+         document.getElementById("p1").innerHTML = values;
+    };
+</script>
+      
+  <br>
+    <b>Add number value to array</b>
+    <input id="box1" type="text">
+    <input id="box2" type="text">
+    <input id="box3" type="text">
+    <br>
+    <br>
+    <input type="button" Value="Add" onClick="addToArray()">
+    <br>
+    <br>
+    <b>Sort Arrayed</b>
+    <p id="p1">Waiting for OnClick!</p>
+    <br>
+    <br>
+    <br>
+</body>
